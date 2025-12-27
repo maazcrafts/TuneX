@@ -1,0 +1,301 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+background-color: #ffd6cf;
+
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+
+.search{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+
+.search p{
+    color: #3a3636;
+    font-size: larger;
+}
+
+
+.Name p{
+color: #0f4c5c;
+
+}
+
+.Name:hover{
+    transform: scale(1.09);
+}
+
+.credit{
+    height: 40px;
+    margin-top: 15px;
+}
+.credit p{
+   font-size: large;
+
+}
+
+.credit:hover{
+        transform: scale(1.09);
+        border: 1px solid black;
+}
+
+
+.s-pro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: xx-large;
+    margin-top: 10px;
+    color: rgb(68, 13, 52);
+}
+
+
+#input{
+    border: none;
+    background-color: transparent;
+    margin-left: 25px;
+    width: 300px;
+    text-decoration: underline;
+    font-size: large;
+     
+}
+
+#input::placeholder{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#input:focus{
+    outline: none;
+}
+
+button{
+   border: none;
+   height: 20px;
+   width: 60px;
+   background-color: rgb(194, 164, 149);
+   border-radius: 5px;
+   color: white;
+   font-weight: bold;
+   cursor:pointer;
+}
+
+button:hover{
+    background-color: bisque;
+    color: black;
+    border: 1px solid black;
+}
+
+button:active{
+    transform: scale(0.98);
+    color: white;
+    background-color: #3a3636;
+
+}
+
+.glass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    font-size:larger;
+    padding: 25px;
+    margin-left: 3rem;
+    
+}
+
+.artist-1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.kishore{
+    height: 150px;
+    width: 150px;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    background-image: url("kishore.png");
+    background-size: cover;
+}
+
+.kishore p{
+    margin-top: 10rem;
+    margin-left: 1.3rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+
+.nfak{
+     height: 150px;
+    width: 150px;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    background-image: url("nfak.png");
+    background-size: cover;
+}
+
+.nfak p{
+     margin-top: 10rem;
+    margin-left: 1rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+
+.arijit{
+     height: 150px;
+    width: 150px;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    background-image: url("arijit.jpg");
+    background-size: cover;
+}
+
+.arijit p{
+     margin-top: 10rem;
+    margin-left: 2rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+.kishore:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.nfak:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.arijit:hover{
+     cursor: pointer;
+    transform: scale(1.05);
+}
+
+.atif:hover{
+     cursor: pointer;
+    transform: scale(1.05);
+}
+
+.jani:hover{
+     cursor: pointer;
+    transform: scale(1.05);
+}
+
+.talha:hover{
+     cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+.artist-2{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -2rem;
+}
+
+.atif{
+    height: 150px;
+    width: 150px;
+    margin-top: 7rem;
+    margin-left: 5rem;
+    background-image: url("atif.png");
+    background-size: cover;
+
+}
+
+
+.atif p{
+     margin-top: 10rem;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 2rem;
+
+}
+
+
+
+
+
+.jani{
+    height: 150px;
+    width: 150px;
+    margin-top: 7rem;
+    margin-left: 5rem;
+    background-image: url("jani.jpg");
+    background-size: cover;
+}
+
+.jani p{
+     margin-top: 10rem;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 3.5rem;
+}
+
+
+
+
+
+.talha{
+ height: 150px;
+    width: 150px;
+    margin-top: 7rem;
+    margin-left: 5rem;
+    background-image: url("TA.png");
+    background-size: cover;
+
+}
+
+.talha p{
+     margin-top: 10rem;
+    margin-left:  2rem;
+    font-size: large;
+    font-weight: bold;
+    
+}
+
+
+
+footer{
+background-color: #1f1f1f;
+color: #ffffff;
+padding-top: 3rem;
+    height: 80px;
+    margin-top: 6rem;
+    display: flex;
+   justify-content: space-evenly;
+   font-size: large;
+
+
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+audio{
+    margin-top: 7rem;
+    margin-left: 33rem;
+    display: flex;
+    justify-content: center;
+}

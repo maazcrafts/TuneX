@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuneX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+<header>
+    <div class="s-pro">
+        <div class="search">
+            <p>Tap to Play</p>
+        </div>
+
+        <div class="Name">
+            <p>Welcome to TuneX</p>
+        </div>
+
+        <div class="credit">
+         <p>Designed by MD.Khizer</p>
+         <p> Created by K.Maaz </p>
+        </div>
+    </div>
+        </header>
+<div id="line">
+
+</div>
+
+    <div class="glass">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="What do you want to listen today?" name="" id="input">
+        <button>
+            <p>Search</p>
+        </button>
+
+    </div>
+
+
+    <div class="artist-1">
+        <div class="kishore" data-song="./songs/kishore.mp3">
+            <p>Kishore Kumar</p>
+
+        </div>
+
+        <div class="nfak"data-song="./songs/nfak.mp3">
+            <p>Nusrat Fateh Ali Khan</p>
+        </div>
+
+        <div class="arijit" data-song="./songs/arijit.mp3">
+            <p>Arijit Singh</p>
+        </div>
+    </div>
+
+    <div class="artist-2">
+        <div class="atif" data-song="./songs/atif.mp3">
+            <p>Atif Aslam</p>
+        </div>
+
+        <div class="jani" data-song="./songs/jani.mp3">
+
+            <p>Jani</p>
+        </div>
+
+
+        <div class="talha" data-song="./songs/talha.mp3">
+            <p>Talha Anjum</p>
+        </div>
+    </div>
+    <audio id="player" controls></audio>
+
+
+</body>
+
+<footer>
+    <div class="home">
+        <a href=""><i class="fa-solid fa-house"></i>
+            <p>Home</p>
+        </a>
+
+    </div>
+    <div class="liked-song">
+        <a href=""> <i class="fa-regular fa-heart"></i>
+            <p>Liked Song</p>
+        </a>
+    </div>
+    <div class="library">
+        <a href=""><i class="fa-solid fa-folder-open"></i>
+            <p>Library</p>
+        </a>
+    </div>
+    <div class="profile">
+        <a href=""><i class="fa-solid fa-circle-user"></i>
+            <p>Profile</p>
+        </a>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+</html>
