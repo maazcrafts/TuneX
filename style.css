@@ -294,8 +294,7 @@ footer a{
 }
 
 audio{
-    margin-top: 7rem;
-    margin-left: 33rem;
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: 40px auto;
+    padding-top: 5rem;
 }
