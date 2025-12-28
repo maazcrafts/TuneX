@@ -31,6 +31,8 @@ artists.forEach(artist => {
     player.src = songPath;
     player.currentTime = 0;
 player.play();
+player.volume = 0.7;
+
 
     player.load();      //  VERY IMPORTANT
     player.play().catch(err => {
