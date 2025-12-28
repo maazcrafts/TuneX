@@ -29,6 +29,9 @@ artists.forEach(artist => {
     // naya song
     player.pause();
     player.src = songPath;
+    player.currentTime = 0;
+player.play();
+
     player.load();      //  VERY IMPORTANT
     player.play().catch(err => {
       console.error("Audio play error:", err);
