@@ -3,85 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TuneX — a simple music player project.">
-  <meta name="theme-color" content="#fff3f0">
-  <title>TuneX | Music Player</title>
+  <meta name="theme-color" content="#0b0b0f">
+  <meta name="description" content="TuneX — a modern personal music player.">
+  <title>TuneX — Music, Your Way</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="topbar">
-    <a class="logo" href="#" aria-label="TuneX home">Tune<span>X</span></a>
-
-    <div class="search-box">
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <input id="searchInput" type="search" placeholder="Search artists or songs..." autocomplete="off">
-      <button id="clearSearch" aria-label="Clear search" title="Clear search">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </div>
-
-    <a class="github-link" href="https://github.com/maazcrafts/TuneX" target="_blank" rel="noreferrer" aria-label="TuneX GitHub">
-      <i class="fa-brands fa-github"></i>
-    </a>
-  </header>
-
-  <main>
-    <section class="intro">
-      <div>
-        <p class="small-title">MY MUSIC PLAYER</p>
-        <h1>Listen to what you like.</h1>
-        <p class="intro-text">Pick an artist and start playing. Your liked songs are saved on this device.</p>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark"><i class="fa-solid fa-music"></i></div>
+        <span>Tune<span>X</span></span>
       </div>
-      <button class="liked-toggle" id="likedToggle">
-        <i class="fa-regular fa-heart"></i>
-        Liked Songs
-      </button>
-    </section>
 
-    <section id="artistsSection">
-      <div class="section-title">
-        <h2>Artists</h2>
-        <span id="resultCount"></span>
-      </div>
-      <div id="artistGrid" class="artist-grid"></div>
-      <div id="emptyState" class="empty-state hidden">
-        <i class="fa-solid fa-music"></i>
-        <h3>No results found</h3>
-        <p>Try searching for another artist or song.</p>
-      </div>
-    </section>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-section="home">
+          <i class="fa-solid fa-house"></i><span>Home</span>
+        </button>
+        <button class="nav-item" data-section="library">
+          <i class="fa-solid fa-heart"></i><span>Your Library</span>
+        </button>
+      </nav>
 
-    <section id="librarySection" class="library-section hidden">
-      <div class="section-title">
-        <div>
-          <h2>Liked Songs</h2>
-          <p>Songs you saved on this device.</p>
+      <div class="sidebar-note">
+        <span>YOUR SOUND</span>
+        <p>Music for every version of you.</p>
+      </div>
+
+      <div class="sidebar-footer">
+        <span>BUILT BY</span>
+        <strong>K. Maaz</strong>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="mobile-brand">Tune<span>X</span></div>
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input id="searchInput" type="search" placeholder="Search artists or songs..." autocomplete="off">
+          <kbd>/</kbd>
         </div>
-        <button id="backToArtists" class="text-button">Back to artists</button>
-      </div>
-      <div id="libraryList" class="library-list"></div>
-      <div id="libraryEmpty" class="empty-state">
-        <i class="fa-regular fa-heart"></i>
-        <h3>No liked songs yet</h3>
-        <p>Press the heart on an artist to save it here.</p>
-      </div>
-    </section>
-  </main>
+        <div class="topbar-actions">
+          <button class="icon-btn" id="clearSearch" title="Clear search" aria-label="Clear search">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <a class="github-link" href="https://github.com/maazcrafts/TuneX" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </header>
 
-  <div class="player-bar">
+      <section id="homeSection" class="page-section">
+        <div class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow"><i class="fa-solid fa-sparkles"></i> TUNEX 2.0</span>
+            <h1>Find a sound.<br><span>Make it yours.</span></h1>
+            <p>A cleaner, faster version of the music player I built while learning HTML & CSS — now rebuilt with a real player, search, library and responsive UI.</p>
+            <button class="primary-btn" id="heroPlay">
+              <i class="fa-solid fa-play"></i> Start listening
+            </button>
+          </div>
+          <div class="hero-art">
+            <div class="hero-glow"></div>
+            <img id="heroImage" src="TA.png" alt="Featured artist">
+            <div class="hero-floating-card">
+              <span>NOW FEATURED</span>
+              <strong id="heroArtist">Talha Anjum</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">DISCOVER</span>
+            <h2>Artists for your mood</h2>
+          </div>
+          <span id="resultCount" class="result-count"></span>
+        </div>
+
+        <div id="artistGrid" class="artist-grid"></div>
+        <div id="emptyState" class="empty-state hidden">
+          <i class="fa-solid fa-music"></i>
+          <h3>No results</h3>
+          <p>Try another artist or song.</p>
+        </div>
+      </section>
+
+      <section id="librarySection" class="page-section hidden">
+        <div class="library-header">
+          <span class="eyebrow">YOUR SPACE</span>
+          <h1>Your Library</h1>
+          <p>Songs you've saved appear here.</p>
+        </div>
+        <div id="libraryList" class="library-list"></div>
+        <div id="libraryEmpty" class="empty-state">
+          <i class="fa-regular fa-heart"></i>
+          <h3>Your library is empty</h3>
+          <p>Tap the heart on any artist to save it here.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="player-bar" id="playerBar">
     <div class="now-playing">
       <img id="playerCover" src="TA.png" alt="Current track">
       <div class="track-meta">
         <strong id="playerTitle">Nothing playing</strong>
         <span id="playerArtist">Choose an artist</span>
       </div>
-      <button class="heart-btn" id="playerLike" aria-label="Like current song" title="Like">
+      <button class="heart-btn" id="playerLike" title="Like" aria-label="Like current song">
         <i class="fa-regular fa-heart"></i>
       </button>
     </div>
 
-    <div class="player-main">
+    <div class="player-center">
       <div class="player-controls">
         <button class="control-btn" id="shuffleBtn" title="Shuffle"><i class="fa-solid fa-shuffle"></i></button>
         <button class="control-btn" id="prevBtn" title="Previous"><i class="fa-solid fa-backward-step"></i></button>
