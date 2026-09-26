@@ -366,3 +366,31 @@ input[type="range"]::-webkit-slider-thumb {
   .player-controls { position: absolute; right: 13px; top: 15px; }
   .player-controls .control-btn:first-child, .player-controls .control-btn:last-child { display: none; }
 }
+
+
+/* TuneX artist-card play button */
+.card-play {
+  position: absolute;
+  right: 9px;
+  bottom: 9px;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  color: #fff;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: .18s;
+  cursor: pointer;
+}
+.artist-card:hover .card-play,
+.artist-card.playing .card-play {
+  opacity: 1;
+  transform: translateY(0);
+}
+.liked-toggle.active {
+  border-color: var(--accent);
+  color: var(--accent);
+}
